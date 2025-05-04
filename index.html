@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motari Samwel | Software Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 min-h-screen transition-colors duration-300">
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="fixed top-4 right-4 z-50 p-2 rounded-full bg-white dark:bg-gray-700 shadow-lg">
+        <i class="fas fa-moon dark:hidden"></i>
+        <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-sm fixed w-full z-40">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Motari Samwel</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">About</a>
+                    <a href="projects.html" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Projects</a>
+                    <a href="contact.html" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="mobileMenuButton">
+                    <i class="fas fa-bars text-gray-700 dark:text-gray-200 text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white dark:bg-gray-800 shadow-lg" id="mobileMenu">
+            <div class="px-4 py-2 flex flex-col space-y-3">
+                <a href="index.html" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium py-2">Home</a>
+                <a href="about.html" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium py-2">About</a>
+                <a href="projects.html" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium py-2">Projects</a>
+                <a href="contact.html" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 animate__animated animate__fadeInLeft">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-800 dark:text-white">
+                    Hi, I'm <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Motari Samwel</span>
+                </h1>
+                <div class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600 dark:text-gray-300 h-12">
+                    <span id="typing-text" class="border-r-2 border-blue-500 pr-1"></span>
+                </div>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                    Computer Science BSc graduate with expertise in software development, web technologies, and AI. Passionate about creating efficient, scalable solutions with solid foundations in data structures and algorithms.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="projects.html" class="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        View My Work
+                    </a>
+                    <a href="contact.html" class="px-6 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors duration-300">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animate__animated animate__fadeInRight">
+                <div class="relative">
+                    <img src="https://i.gifer.com/origin/84/84b7d7e62befb51f831bc0ed0390b0a3_w200.gif" alt="Coding animation" class="rounded-full w-64 h-64 object-cover border-4 border-white dark:border-gray-700 shadow-xl">
+                    <div class="absolute -bottom-5 -right-5 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg">
+                        <div class="w-14 h-14 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-blue-600 dark:text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Web Development</h3>
+                    <p class="text-gray-600 dark:text-gray-300">HTML, CSS, JavaScript, React, Node.js</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-purple-600 dark:text-purple-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">AI & ML</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Python, TensorFlow, NLP, Computer Vision</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-project-diagram text-green-600 dark:text-green-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">DSA</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Algorithms, Problem Solving, Optimization</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
+                    <div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-network-wired text-yellow-600 dark:text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Networking</h3>
+                    <p class="text-gray-600 dark:text-gray-300">TCP/IP, Security, Cloud Computing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="index.html" class="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Motari Samwel</a>
+                    <p class="text-gray-600 dark:text-gray-300 mt-1">Software & Web Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-gray-600 dark:text-gray-300">
+                <p>&copy; 2023 Motari Samwel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
